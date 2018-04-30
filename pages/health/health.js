@@ -1,30 +1,18 @@
-// pages/comerce/comerce.js
-var text = '';
-
+// pages/health/health.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    height: '',
-    widht: '',
-    value: '',
-    inputText: ''
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getSystemInfo({
-      success: res => {
-        this.setData({
-          height: res.windowHeight -33,
-          widht: res.windowWidth -50,
-        })
-      },
-    })
+  
   },
 
   /**
@@ -59,7 +47,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+  
   },
 
   /**
@@ -74,27 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  bindKeyInput: function (e) {
-    this.setData({
-      inputText: e.detail.value
-    })
-  },
-  confirmText: function(e){
-    text = text + e.detail.value + '\n',
-    this.setData({
-      value: text,
-      inputText: ''
-    })
-  },
-  sendText: function(){
-    text = text + this.data.inputText + '\n',
-    this.setData({
-      value: text,
-      inputText: ''
-    })
-  },
-  hideKeyboard: function(){
-    wx.hideKeyboard();
   }
 })

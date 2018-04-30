@@ -11,7 +11,7 @@
 <view class="section">
   <view class="buttonsTop">
     <image bindtap='goToComerce' mode='widthFix' class='IconButtonComerce' src='../../images/comerce.png'></image>
-    <image mode='widthFix' class='IconButtonHealth' src='../../images/health.png'></image>
+    <image bindtap='goToHealth' mode='widthFix' class='IconButtonHealth' src='../../images/health.png'></image>
     <image mode='widthFix' class='IconButtonTourism' src='../../images/travel.png'></image>
   </view>
 </view>

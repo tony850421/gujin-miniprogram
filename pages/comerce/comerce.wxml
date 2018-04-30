@@ -1,12 +1,12 @@
 <!--pages/comerce/comerce.wxml-->
 <view class='section'>
-  <view class='search'>
-    <textarea class='textArray' style='height: {{height}}px'></textarea>
+  <view class='search' style='height: {{height}}px'>
+    <textarea value='{{value}}' class='textArray'>{{text}}</textarea>
   </view>
 </view>
 <view class='section'>
   <view class='search'>
-    <input class='inputSend' type='text' style='width: {{widht}}px'></input>
-    <image class='send' style='margin-left: {{widht+18}}px' src='../../images/send.png'></image>
+    <input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht}}px' auto-focus='true'></input>
+    <image bindtap='sendText' class='send' style='margin-left: {{widht+18}}px' src='../../images/send.png'></image>
   </view>
 </view>

@@ -70,5 +70,13 @@ Page({
       fail: function(res) {},
       complete: function(res) {},
     })
+  },
+  goToHealth: function () {
+    wx.navigateTo({
+      url: '../health/health',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   }
 })
