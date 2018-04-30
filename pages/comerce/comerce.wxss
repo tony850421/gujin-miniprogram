@@ -2,7 +2,7 @@
 .textArray{
   width: 100%;
   border-top: 1px #BBBBBB solid;
-  
+  position: static;
 }
 
 .inputSend{
@@ -22,4 +22,12 @@
   height: 27px;
   margin-top: -28px;
   position: absolute;
+}
+
+.scrollComment{
+  width: 100%;
+}
+
+page{
+  overflow-y: hidden;
 }

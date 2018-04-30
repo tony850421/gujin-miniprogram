@@ -10,7 +10,9 @@ Page({
     height: '',
     widht: '',
     value: '',
-    inputText: ''
+    inputText: '',
+    focus: true,
+    scrollTop: 100
   },
 
   /**
@@ -84,14 +86,16 @@ Page({
     text = text + e.detail.value + '\n',
     this.setData({
       value: text,
-      inputText: ''
+      inputText: '',
+      focus: true
     })
   },
   sendText: function(){
     text = text + this.data.inputText + '\n',
     this.setData({
       value: text,
-      inputText: ''
+      inputText: '',
+      focus: true
     })
   },
   hideKeyboard: function(){
