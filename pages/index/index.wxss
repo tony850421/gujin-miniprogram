@@ -1,0 +1,279 @@
+/**index.wxss**/
+.ImageHome {
+  margin-top: 0px;
+  margin-bottom: 0px;  
+}
+
+.buttonsTop{
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+.buttonList{
+  margin-left: 50px;
+  border-radius: 50px;
+  border: 0px;
+}
+
+.imageProduct{
+  width: 40%;
+  margin-left: 7%;
+}
+
+.imageMargin{
+  margin-top: 30px;
+}
+
+.TextProduct1{
+  margin-left: 14%;
+}
+
+.TextProduct2{
+  margin-left: 27%;
+}
+
+.TextProduct3{
+  margin-left: 20%;
+}
+
+.TextProduct4{
+  margin-left: 36%;
+}
+
+.TextMargin{
+  margin-top: 10px;
+}
+
+.TextMarginBottom{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.videoHome{
+  width: 100%;
+}
+
+@media(max-width: 480px){
+.HomePicture{
+  width: 100%;
+  max-height: 280px;
+}
+
+.comerceText{
+  margin-left: 10%;
+}
+
+.healthText{
+  margin-left: 12%;
+}
+
+.tourismText{
+  float: right;
+  margin-right: 12%;
+}
+
+.IconButtonComerce{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonHealth{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 17%;
+}
+
+.IconButtonTourism{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 15%;
+}
+}
+
+@media(max-width: 414px){
+.HomePicture{
+  width: 100%;
+  max-height: 250px;
+}
+
+.comerceText{
+  margin-left: 10%;
+}
+
+.healthText{
+  margin-left: 11%;
+}
+
+.tourismText{
+  float: right;
+  margin-right: 12%;
+}
+
+.IconButtonComerce{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonHealth{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 17%;
+}
+
+.IconButtonTourism{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 15%;
+}
+}
+
+@media(max-width: 375px){
+.HomePicture{
+  width: 100%;
+  max-height: 180px;
+}
+
+.comerceText{
+  margin-left: 11%;
+}
+
+.healthText{
+  margin-left: 10%;
+}
+
+.tourismText{
+  float: right;
+  margin-right: 12%;
+}
+
+.IconButtonComerce{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonHealth{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonTourism{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 15%;
+}
+}
+
+@media(max-width: 360px){
+.HomePicture{
+  width: 100%;
+  max-height: 180px;
+}
+
+.comerceText{
+  margin-left: 11%;
+}
+
+.healthText{
+  margin-left: 11%;
+}
+
+.tourismText{
+  float: right;
+  margin-right: 12%;
+}
+
+.IconButtonComerce{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonHealth{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.IconButtonTourism{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 15%;
+}
+}
+
+@media(max-width: 320px){
+.HomePicture{
+  width: 100%;
+  max-height: 160px;
+}
+
+.comerceText{
+  margin-left: 8%;
+}
+
+.healthText{
+  margin-left: 14%;
+}
+
+.tourismText{
+  float: right;
+  margin-right: 10%;
+}
+
+.IconButtonComerce{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 12%;
+}
+
+.IconButtonHealth{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 16%;
+}
+
+.IconButtonTourism{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 12%;
+}
+}
+
+.qrImage{
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  z-index: 10px;
+}
+
+.code{
+  width: 100% !important;
+  height: 40px;
+  position: absolute;
+}

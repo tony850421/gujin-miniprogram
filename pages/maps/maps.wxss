@@ -1,0 +1,20 @@
+/* pages/maps/maps.wxss */
+.textDirection{
+  font-size: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-overflow: clip;
+}
+
+.buttonCall{
+  width: 40px;
+  height: 40px;
+  float: left;
+  top: 10px;
+  left: 10px;
+  position: absolute;  
+}
+
+#map{
+  width: 100%;  
+}

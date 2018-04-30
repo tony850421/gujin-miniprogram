@@ -1,0 +1,24 @@
+/* pages/comerce/comerce.wxss */
+.textArray{
+  width: 100%;
+  border-top: 1px #BBBBBB solid;
+}
+
+.inputSend{
+  border: 1px #BBBBBB solid;
+  border-radius: 20px;
+  height: 27px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.search{
+  flex-direction: row;
+}
+
+.send{
+  width: 27px;
+  height: 27px;
+  margin-top: -28px;
+  position: absolute;
+}

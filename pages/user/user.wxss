@@ -1,0 +1,49 @@
+/* pages/user/user.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+@media(max-width: 480px){
+.userinfo {
+    margin-left: 10%;
+  }  
+}
+
+@media(max-width: 414px){
+.userinfo {
+    margin-left: 10%;
+  }  
+}
+
+@media(max-width: 375px){
+.userinfo {
+    margin-left: 10%;
+  }  
+}
+
+@media(max-width: 360px){
+.userinfo {
+    margin-left: 10%;
+  }  
+}
+
+@media(max-width: 320px){
+  .userinfo {
+    margin-left: 10%;
+  }  
+}
+

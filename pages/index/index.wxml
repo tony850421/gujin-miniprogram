@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class='code'>
+  <image bindtap='scanQRCode' src='../../images/qrcode.png' class='qrImage'></image>
+</view>
+<view class="section">
+  <view class="ImageHome">
+    <image class='HomePicture' src="https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg"></image>    
+  </view>  
+</view>
+
+<view class="section">
+  <view class="buttonsTop">
+    <image bindtap='goToComerce' mode='widthFix' class='IconButtonComerce' src='../../images/comerce.png'></image>
+    <image mode='widthFix' class='IconButtonHealth' src='../../images/health.png'></image>
+    <image mode='widthFix' class='IconButtonTourism' src='../../images/travel.png'></image>
+  </view>
+</view>
+<view class="section">
+  <view class="">
+    <text class='comerceText'>Comerce</text>
+    <text class='healthText'>Health</text>
+    <text class='tourismText'>Tourism</text>
+  </view>
+</view>
+<view class="section">
+  <view class="imageMargin">
+    <image mode='widthFix' class='imageProduct' src='https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg'></image>
+    <image mode='widthFix' class='imageProduct' src='https://img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg'></image>
+  </view>
+  <view class="TextMargin">
+    <text class='TextProduct1'>Mountains</text>
+    <text class='TextProduct2'>Alpes</text>
+  </view>  
+</view>
+<view class='section'>
+<view class="imageMargin">
+    <video class='videoHome' src="https://cloud.video.taobao.com/play/u/2217892767/p/1/e/6/t/1/43911461.mp4" controls ></video>
+  </view>
+</view>
