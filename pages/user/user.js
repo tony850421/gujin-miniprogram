@@ -1,4 +1,7 @@
 // pages/user/user.js
+
+const AV = require('../../utils/av-live-query-weapp-min');
+
 const app = getApp()
 
 Page({
@@ -8,7 +11,7 @@ Page({
    */
   data: {
     userInfo: {},
-    hasUserInfo: false
+    hasUserInfo: false,
   },
 
   /**
@@ -37,7 +40,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
@@ -81,6 +84,7 @@ Page({
   onShareAppMessage: function () {
   
   },
+
   bindViewTap: function(){
     wx.showModal({
       title: 'Prompt',
