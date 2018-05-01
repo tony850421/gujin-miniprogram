@@ -12,7 +12,8 @@ Page({
     value: '',
     inputText: '',
     focus: true,
-    scrollTop: 100
+    comments: [],
+    leftReply: ''
   },
 
   /**
@@ -22,8 +23,9 @@ Page({
     wx.getSystemInfo({
       success: res => {
         this.setData({
-          height: res.windowHeight -33,
+          height: res.windowHeight -45,
           widht: res.windowWidth -50,
+          leftReply: res.windowWidth - 85
         })
       },
     })
@@ -83,14 +85,6 @@ Page({
     })
   },
   confirmText: function(e){
-    text = text + e.detail.value + '\n',
-    this.setData({
-      value: text,
-      inputText: '',
-      focus: true
-    })
-  },
-  sendText: function(){
     text = text + this.data.inputText + '\n',
     this.setData({
       value: text,
@@ -98,7 +92,13 @@ Page({
       focus: true
     })
   },
+  sendText: function(){
+    confirmText()
+  },
   hideKeyboard: function(){
-    wx.hideKeyboard();
+    wx.hideKeyboard()
+  },
+  replyComment: function(){
+
   }
 })

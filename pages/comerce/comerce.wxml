@@ -1,14 +1,24 @@
 <!--pages/comerce/comerce.wxml-->
 <view class='section'>
-  <view class='search'>     
-    <textarea value='{{value}}' class='textArray' style='height: {{height}}px'>
-      {{text}}
-    </textarea>  
+  <view style='height: {{height}}px; padding-bottom: 5px'>
+    <scroll-view scroll-y="true" style="height: {{height}}px" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+      <view class='comments'>
+        <view style='width: {{widht}}px' class='commentFirstLevel'>
+          <view>
+            <text>Probando el primer comentario</text>
+          </view>
+          <view class='replyBox'>
+            <image bindtap='replyComment' class='reply' style='margin-left: {{leftReply}}px' src='../../images/reply.png'></image>
+          </view>
+        </view>
+        <view style='width: {{widht}}px' class='commentSecondLevel'>
+          <text >Probando el segundo comentario sdhasfda sdgasjd gasdg ashdg asja sdjasgd jas </text>
+        </view>
+      </view>      
+    </scroll-view>
   </view>
 </view>
-<view class='section'>
-  <view class='search'>
+<view class='textBar'>
     <input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht}}px' focus='{{focus}}' auto-focus='true'></input>
     <image bindtap='sendText' class='send' style='margin-left: {{widht+18}}px' src='../../images/send.png'></image>
-  </view>
 </view>
