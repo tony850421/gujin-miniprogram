@@ -4,12 +4,13 @@
     "pages/logs/logs",
     "pages/user/user",
     "pages/maps/maps",
-    "pages/comerce/comerce"
+    "pages/comerce/comerce",
+    "pages/health/health"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Gujin Cuba",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

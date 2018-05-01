@@ -2,6 +2,7 @@
 .textArray{
   width: 100%;
   border-top: 1px #BBBBBB solid;
+  position: static;
 }
 
 .inputSend{
@@ -12,13 +13,59 @@
   padding-right: 7px;
 }
 
-.search{
-  flex-direction: row;
-}
-
 .send{
   width: 27px;
   height: 27px;
   margin-top: -28px;
   position: absolute;
+}
+
+page{
+  overflow-y: hidden;
+}
+
+.commentFirstLevel{
+  background-color: #1AFF00;
+  border: 1px #1AFF00 solid;  
+  border-radius: 20px;
+  margin-top: 5px !important;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.commentSecondLevel{
+  background-color: #0059FF;
+  border: 1px #0059FF solid;  
+  border-radius: 20px;
+  margin-top: 5px !important;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.comments{
+  flex-direction: column;
+}
+
+.textBar{
+  padding-top: 5px;
+  border-top: 1px #BBBBBB solid;
+}
+
+.reply{
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.textFirstComment{
+  width: 100%;
+  position: relative;
+}
+
+.replyBox{
+  margin-top: 5px;
 }
