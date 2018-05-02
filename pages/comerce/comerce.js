@@ -1,5 +1,8 @@
 // pages/comerce/comerce.js
 var text = '';
+var aux = [];
+
+const AV = require('../../utils/av-live-query-weapp-min');
 
 Page({
 
@@ -12,7 +15,7 @@ Page({
     inputText: '',
     focus: true,
     leftReply: '',
-    article: []
+    commentsArray: []
   },
 
   /**
@@ -29,39 +32,58 @@ Page({
       },
     })
 
-    var comment = [{
-      id:0,
-      article: 'A',
-      content: 'Assda sda sdas dasd',
-      create_date: '01-05-2018',
-      replyTextArea: false,
-      childrens: [{
-        id: 0,
-        article: 'B',
-        content: 'probando',
-        create_date: '01-05-2018',
-        replyTextArea: false,
-        childrens: []
-      },{
-          id: 1,
-          article: 'C',
-          content: 'probando CCCC',
-          create_date: '01-05-2018',
-          replyTextArea: false,
-          childrens: []
-      }]
-    }]
+    var idCommerce = ''
 
-    this.setData({
-      article: comment
-    })
+    // var comment = [{
+    //   id:0,
+    //   article: 'A',
+    //   content: 'Assda sda sdas dasd',
+    //   create_date: '01-05-2018',
+    //   replyTextArea: false,
+    //   childrens: [{
+    //     id: 0,
+    //     article: 'B',
+    //     content: 'probando',
+    //     create_date: '01-05-2018',
+    //     replyTextArea: false,
+    //     childrens: []
+    //   },{
+    //       id: 1,
+    //       article: 'C',
+    //       content: 'probando CCCC',
+    //       create_date: '01-05-2018',
+    //       replyTextArea: false,
+    //       childrens: []
+    //   }]
+    // }]
+
+    // this.setData({
+    //   article: comment
+    // })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    wx.getStorage({
+      key: 'Commerce',
+      success: function (res) {
+        var commerce = AV.Object.createWithoutData('Article', res.data);
+        var query = new AV.Query('Comment');
+        query.equalTo('owner', commerce);
+        query.find().then(function (comments) {
+          // comments.forEach(function (comment, i, a) {
+
+          // });
+
+          this.setData({
+            commentsArray: comments
+          })
+          console.log(comments)
+        });
+      }
+    })
   },
 
   /**
@@ -110,52 +132,52 @@ Page({
       inputText: e.detail.value
     })
   },
-  confirmText: function(e){
-    var comment = {
-      id: this.data.article.length,
-      article: 'A',
-      content: text + this.data.inputText,
-      create_date: Date.toString,
-      replyTextArea: false,
-      childrens: []
-    }
+  confirmText: function(){
+    // var comment = {
+    //   id: this.data.article.length,
+    //   article: 'A',
+    //   content: text + this.data.inputText,
+    //   create_date: Date.toString,
+    //   replyTextArea: false,
+    //   childrens: []
+    // }
 
-    var articleAux = []
-    articleAux = this.data.article
-    articleAux.push(comment)
+    // var articleAux = []
+    // articleAux = this.data.article
+    // articleAux.push(comment)
 
-    this.setData({
-      article: articleAux
-    })
+    // this.setData({
+    //   article: articleAux
+    // })
 
-    this.setData({
-      inputText: '',
-      focus: true
-    })
+    // this.setData({
+    //   inputText: '',
+    //   focus: true
+    // })
 
-    console.log(this.data.article)
+    // console.log(this.data.article)
   },
   sendText: function(){
-    confirmText()
+    this.confirmText()
   },
   hideKeyboard: function(){
     wx.hideKeyboard()
   },
-  replyComment: function(id){
-    console.log(id + " id")
-    var articleAux = this.data.article
+  replyComment: function(event){
+    console.log("llego aqui")
+    // var articleAux = this.data.article
 
-    for (var i = 0; i < articleAux.length; i++){
-      if (articleAux[i].id == id){
-        articleAux[i].replyTextArea = true
-        break
-      }
-    }
+    // for (var i = 0; i < articleAux.length; i++){
+    //   if (articleAux[i].id == event.currentTarget.dataset.id){
+    //     articleAux[i].replyTextArea = true
+    //     break
+    //   }
+    // }
 
-    this.setData({
-      article: articleAux
-    })
+    // this.setData({
+    //   article: articleAux
+    // })
 
-    console.log(this.data.article)
+    // console.log(this.data.article)
   }
 })

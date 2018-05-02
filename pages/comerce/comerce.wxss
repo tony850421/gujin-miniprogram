@@ -73,3 +73,7 @@ page{
 .noReplyBox{
   margin-top: 10px;
 }
+
+.replyBoxText{
+  flex-direction: row;
+}

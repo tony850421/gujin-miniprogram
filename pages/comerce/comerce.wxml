@@ -2,21 +2,22 @@
 <view class='section'>
   <view style='height: {{height}}px; padding-bottom: 5px'>
     <scroll-view scroll-y="true" style="height: {{height}}px" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
-      <view class='comments' wx:for="{{article}}" wx:for-item="comment" wx:key="unique">
+      <view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
         <view style='width: {{widht}}px' class='commentFirstLevel'>
           <view>
             <text>{{comment.content}}</text>
           </view>
           <view wx:if="{{comment.childrens.length <= 0}}" class='replyBox'>
-            <image bindtap='replyComment({{comment.id}})' class='reply' style='margin-left: {{leftReply}}px' src='../../images/reply.png'></image>
+            <image bindtap='replyComment'data-id="{{comment.id}}" class='reply' style='margin-left: {{leftReply}}px' src='../../images/reply.png'></image>
           </view>
           <view wx:else class='noReplyBox'></view>
         </view>        
         <view wx:for="{{comment.childrens}}" wx:for-item="subcomments" wx:key="unique" style='width: {{widht}}px' class='commentSecondLevel'>
           <text>{{subcomments.content}}</text>
         </view>
-        <view wx:if="{{comment.replyTextArea}}">
-          <textarea></textarea>
+        <view wx:if="{{comment.replyTextArea}}" class='replyBoxText'>
+          <textarea placeholder='Enter a comment'></textarea>
+          <button size='mini'>Save</button>
         </view>
       </view>      
     </scroll-view>

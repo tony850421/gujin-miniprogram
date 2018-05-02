@@ -14,6 +14,12 @@ App({
       if(number > 0){
         query.find().then(function (results) {
           results.forEach(function (article, i, a) {
+            
+            wx.setStorage({
+              key: article.attributes['name'],
+              data: article.id
+            })
+            
             console.log(article.id);
             console.log(article.attributes['name']);
 
