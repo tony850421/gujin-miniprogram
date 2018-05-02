@@ -9,11 +9,10 @@ Page({
   data: {
     height: '',
     widht: '',
-    value: '',
     inputText: '',
     focus: true,
-    comments: [],
-    leftReply: ''
+    leftReply: '',
+    article: []
   },
 
   /**
@@ -28,6 +27,33 @@ Page({
           leftReply: res.windowWidth - 85
         })
       },
+    })
+
+    var comment = [{
+      id:0,
+      article: 'A',
+      content: 'Assda sda sdas dasd',
+      create_date: '01-05-2018',
+      replyTextArea: false,
+      childrens: [{
+        id: 0,
+        article: 'B',
+        content: 'probando',
+        create_date: '01-05-2018',
+        replyTextArea: false,
+        childrens: []
+      },{
+          id: 1,
+          article: 'C',
+          content: 'probando CCCC',
+          create_date: '01-05-2018',
+          replyTextArea: false,
+          childrens: []
+      }]
+    }]
+
+    this.setData({
+      article: comment
     })
   },
 
@@ -85,12 +111,29 @@ Page({
     })
   },
   confirmText: function(e){
-    text = text + this.data.inputText + '\n',
+    var comment = {
+      id: this.data.article.length,
+      article: 'A',
+      content: text + this.data.inputText,
+      create_date: Date.toString,
+      replyTextArea: false,
+      childrens: []
+    }
+
+    var articleAux = []
+    articleAux = this.data.article
+    articleAux.push(comment)
+
     this.setData({
-      value: text,
+      article: articleAux
+    })
+
+    this.setData({
       inputText: '',
       focus: true
     })
+
+    console.log(this.data.article)
   },
   sendText: function(){
     confirmText()
@@ -98,7 +141,21 @@ Page({
   hideKeyboard: function(){
     wx.hideKeyboard()
   },
-  replyComment: function(){
+  replyComment: function(id){
+    console.log(id + " id")
+    var articleAux = this.data.article
 
+    for (var i = 0; i < articleAux.length; i++){
+      if (articleAux[i].id == id){
+        articleAux[i].replyTextArea = true
+        break
+      }
+    }
+
+    this.setData({
+      article: articleAux
+    })
+
+    console.log(this.data.article)
   }
 })

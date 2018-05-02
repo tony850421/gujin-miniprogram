@@ -42,7 +42,7 @@ page{
   border: 1px #0059FF solid;  
   border-radius: 20px;
   margin-top: 5px !important;
-  margin-left: 15px;
+  margin-left: 20px;
   padding: 10px;
 }
 
@@ -68,4 +68,8 @@ page{
 
 .replyBox{
   margin-top: 5px;
+}
+
+.noReplyBox{
+  margin-top: 10px;
 }
