@@ -77,9 +77,9 @@ Page({
 
           // });
 
-          this.setData({
-            commentsArray: comments
-          })
+          // this.setData({
+          //   commentsArray: comments
+          // })
           console.log(comments)
         });
       }
