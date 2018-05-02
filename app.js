@@ -1,6 +1,61 @@
+const AV = require('./utils/av-live-query-weapp-min');
+
+AV.init({
+  appId: 'qNFjWh6zS7D36L7lwPl7JAnN-gzGzoHsz',
+  appKey: 'Mizywm8n5MtGwJWaWpRAElF3',
+});
+
 //app.js
 App({
   onLaunch: function () {
+
+    var query = new AV.Query("Article");
+    query.count().then(function (number) {
+      if(number > 0){
+        query.find().then(function (results) {
+          results.forEach(function (article, i, a) {
+            console.log(article.id);
+            console.log(article.attributes['name']);
+
+            var queryComment = new AV.Query('Comment');
+            queryComment.equalTo('owner', article);
+            queryComment.find().then(function (comments) {
+              comments.forEach(function (comment, i, a) {
+                console.log(comment.id);
+                console.log(comment.attributes['content']);
+              });
+            });
+
+          });
+        }, function (error) {
+          //error
+        });
+      }else{
+        var commerce  = new AV.Object('Article');
+        commerce.set('name', 'Commerce');
+        var ccomment = new AV.Object('Comment');
+        ccomment.set('content', 'hello commerce article');
+        ccomment.set('owner', commerce);
+        ccomment.save();
+
+        var tourism = new AV.Object('Article');
+        tourism.set('name', 'Tourism');
+        var tcomment = new AV.Object('Comment');
+        tcomment.set('content', 'hello tourism article');
+        tcomment.set('owner', tourism);
+        tcomment.save();
+
+        var health = new AV.Object('Article'); 
+        health.set('name', 'Health');
+        var hcomment = new AV.Object('Comment');
+        hcomment.set('content', 'hello health article');
+        hcomment.set('owner', health);
+        hcomment.save();
+      }
+    }, function (error) {
+      //error
+    });
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
