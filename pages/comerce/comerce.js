@@ -1,8 +1,8 @@
 // pages/comerce/comerce.js
 var text = '';
-var aux = [];
 
 const AV = require('../../utils/av-live-query-weapp-min');
+const bind = require('../../utils/live-query-binding');
 
 Page({
 
@@ -68,22 +68,31 @@ Page({
   onReady: function () {
     wx.getStorage({
       key: 'Commerce',
-      success: function (res) {
-        var commerce = AV.Object.createWithoutData('Article', res.data);
-        var query = new AV.Query('Comment');
-        query.equalTo('owner', commerce);
-        query.find().then(function (comments) {
-          // comments.forEach(function (comment, i, a) {
-
-          // });
-
-          // this.setData({
-          //   commentsArray: comments
-          // })
-          console.log(comments)
-        });
-      }
+      success: res => {
+        console.log('page ready');
+        console.log(res.data);
+        this.fetchComments(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
+      },
     })
+  },
+
+  fetchComments: function (id) {
+    const query = new AV.Query('Comment')
+      .equalTo('owner', AV.Object.createWithoutData('Article', id))
+      .descending('createdAt');
+    const setComments = this.setComments.bind(this);
+    return AV.Promise.all([query.find().then(setComments), query.subscribe()]).then(([commentsArray, subscription]) => {
+      this.subscription = subscription;
+      if (this.unbind) this.unbind();
+      this.unbind = bind(subscription, commentsArray, setComments);
+    }).catch(error => console.error(error.message));
+  },
+
+  setComments: function (commentsArray) {
+    this.setData({
+      commentsArray,
+    });
+    return commentsArray;
   },
 
   /**
@@ -104,14 +113,21 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    this.subscription.unsubscribe();
+    this.unbind();
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+    wx.getStorage({
+      key: 'Commerce',
+      success: res => {
+        console.log('page ready');
+        this.fetchTodos(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
+      },
+    })
   },
 
   /**
