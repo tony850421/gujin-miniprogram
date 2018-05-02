@@ -24,30 +24,12 @@ page{
   overflow-y: hidden;
 }
 
-.commentFirstLevel{
-  background-color: #1AFF00;
-  border: 1px #1AFF00 solid;  
-  border-radius: 20px;
-  margin-top: 5px !important;
-  margin-left: 5px;
-  padding-left: 10px;
-  padding-bottom: 0px;
-  padding-right: 10px;
-  padding-top: 10px;
-  flex-direction: column;
-}
-
-.commentSecondLevel{
-  background-color: #0059FF;
-  border: 1px #0059FF solid;  
-  border-radius: 20px;
-  margin-top: 5px !important;
-  margin-left: 20px;
-  padding: 10px;
-}
-
-.comments{
-  flex-direction: column;
+.commentStyle{
+  background-color: #FCFCFC;
+  border: 1px #F5F5F5 solid;  
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 15px;
 }
 
 .textBar{
@@ -55,25 +37,29 @@ page{
   border-top: 1px #BBBBBB solid;
 }
 
-.reply{
-  width: 20px;
-  height: 20px;
-  position: relative;
+.scrollBox{
+  border-top: 1px #BBBBBB solid;
 }
 
-.textFirstComment{
-  width: 100%;
-  position: relative;
+.imageAvatar{
+  width: 50px;
+  height: 50px;
 }
 
-.replyBox{
-  margin-top: 5px;
+.contentComment{
+  display: flex !important;
+  flex-direction: column;
 }
 
-.noReplyBox{
+.comments{
   margin-top: 10px;
+  margin-left: 10px;
+  display: flex !important;
+  flex-direction: row;
 }
 
-.replyBoxText{
-  flex-direction: row;
+.dateText{
+  font-size: 11px;
+  text-align: end;
+  margin-top: 5px;
 }

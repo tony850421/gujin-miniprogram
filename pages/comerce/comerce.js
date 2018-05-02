@@ -4,6 +4,8 @@ var text = '';
 const AV = require('../../utils/av-live-query-weapp-min');
 const bind = require('../../utils/live-query-binding');
 
+const util = require('../../utils/util.js')
+
 Page({
 
   /**
@@ -14,8 +16,8 @@ Page({
     widht: '',
     inputText: '',
     focus: true,
-    leftReply: '',
-    commentsArray: []
+    commentsArray: [],
+    userInfo: {}
   },
 
   /**
@@ -25,41 +27,19 @@ Page({
     wx.getSystemInfo({
       success: res => {
         this.setData({
-          height: res.windowHeight -45,
-          widht: res.windowWidth -50,
-          leftReply: res.windowWidth - 85
+          height: res.windowHeight,
+          widht: res.windowWidth
         })
       },
     })
 
-    var idCommerce = ''
-
-    // var comment = [{
-    //   id:0,
-    //   article: 'A',
-    //   content: 'Assda sda sdas dasd',
-    //   create_date: '01-05-2018',
-    //   replyTextArea: false,
-    //   childrens: [{
-    //     id: 0,
-    //     article: 'B',
-    //     content: 'probando',
-    //     create_date: '01-05-2018',
-    //     replyTextArea: false,
-    //     childrens: []
-    //   },{
-    //       id: 1,
-    //       article: 'C',
-    //       content: 'probando CCCC',
-    //       create_date: '01-05-2018',
-    //       replyTextArea: false,
-    //       childrens: []
-    //   }]
-    // }]
-
-    // this.setData({
-    //   article: comment
-    // })
+    wx.getUserInfo({
+      success: res => {
+        this.setData({
+          userInfo: res.userInfo
+        })
+      }
+    })
   },
 
   /**
@@ -69,13 +49,10 @@ Page({
     wx.getStorage({
       key: 'Commerce',
       success: res => {
-        console.log('page ready');
-        console.log(res.data);
         this.fetchComments(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
       },
     })
   },
-
   fetchComments: function (id) {
     const query = new AV.Query('Comment')
       .equalTo('owner', AV.Object.createWithoutData('Article', id))
@@ -89,9 +66,14 @@ Page({
   },
 
   setComments: function (commentsArray) {
+    commentsArray.forEach(function (comment, i, a) {
+      comment.createdAt = comment.createdAt.toLocaleString()
+    });
+
     this.setData({
       commentsArray,
     });
+    
     return commentsArray;
   },
 
@@ -124,8 +106,7 @@ Page({
     wx.getStorage({
       key: 'Commerce',
       success: res => {
-        console.log('page ready');
-        this.fetchTodos(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
+        this.fetchComments(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
       },
     })
   },
@@ -149,51 +130,29 @@ Page({
     })
   },
   confirmText: function(){
-    // var comment = {
-    //   id: this.data.article.length,
-    //   article: 'A',
-    //   content: text + this.data.inputText,
-    //   create_date: Date.toString,
-    //   replyTextArea: false,
-    //   childrens: []
-    // }
+    wx.getStorage({
+      key: 'Commerce',
+      success: res => {
+        var article = AV.Object.createWithoutData('Article', res.data)
+        
+        var ccomment = new AV.Object('Comment');
+        ccomment.set('content', text + this.data.inputText);
+        ccomment.set('avatarUrl', this.data.userInfo.avatarUrl);
+        ccomment.set('nickName', this.data.userInfo.nickName);
+        ccomment.set('owner', article);
+        ccomment.save();
 
-    // var articleAux = []
-    // articleAux = this.data.article
-    // articleAux.push(comment)
-
-    // this.setData({
-    //   article: articleAux
-    // })
-
-    // this.setData({
-    //   inputText: '',
-    //   focus: true
-    // })
-
-    // console.log(this.data.article)
+        this.setData({
+          inputText: '',
+          focus: true
+        })
+      },
+    })
   },
   sendText: function(){
     this.confirmText()
   },
   hideKeyboard: function(){
     wx.hideKeyboard()
-  },
-  replyComment: function(event){
-    console.log("llego aqui")
-    // var articleAux = this.data.article
-
-    // for (var i = 0; i < articleAux.length; i++){
-    //   if (articleAux[i].id == event.currentTarget.dataset.id){
-    //     articleAux[i].replyTextArea = true
-    //     break
-    //   }
-    // }
-
-    // this.setData({
-    //   article: articleAux
-    // })
-
-    // console.log(this.data.article)
   }
 })

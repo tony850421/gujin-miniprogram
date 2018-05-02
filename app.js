@@ -5,24 +5,20 @@ AV.init({
   appKey: 'Mizywm8n5MtGwJWaWpRAElF3',
 });
 
+
 //app.js
 App({
   onLaunch: function () {
-
     var query = new AV.Query("Article");
     query.count().then(function (number) {
       if(number > 0){
         query.find().then(function (results) {
           results.forEach(function (article, i, a) {
-            console.log(article.id);
-            console.log(article.attributes['name']);
 
             var queryComment = new AV.Query('Comment');
             queryComment.equalTo('owner', article);
             queryComment.find().then(function (comments) {
               comments.forEach(function (comment, i, a) {
-                console.log(comment.id);
-                console.log(comment.attributes['content']);
               });
             });
 
