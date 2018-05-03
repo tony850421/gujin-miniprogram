@@ -1,22 +1,70 @@
 <!--pages/comerce/comerce.wxml-->
 <view class='section'>
-  <view class='scrollBox' style='height: {{height-45}}px; padding-bottom: 5px'>
-    <scroll-view scroll-y="true" style="height: {{height-50}}px" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
-      <view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
-        <view class='imageAvatar'>
-            <image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
-        </view> 
-        <view style='width: {{widht-110}}px' class='commentStyle'>          
-          <view class='contentComment'>
-            <text>{{comment.content}}</text>
-            <text class='dateText'>{{comment.createdAt}}</text>
-          </view>
-        </view>               
-      </view>
-    </scroll-view>
-  </view>
+<view>
+<scroll-view scroll-y="true" style="height: {{height-50}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<view class='article'>
+<image class='HomePicture' src='https://s19.postimg.cc/w0w0j88er/habanos.jpg'></image>
+<text class='title'>Why Habanos are the best cigars in the world?</text>
+<text>\n</text>
+<text class='content'>In Cuba, the best cigars in the world are still handmade. People call them Habanos.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>Why are they so special?</text>
+<text>\n</text>
+<text class='content'>The layers of these cigars, unlike those produced in other regions of the planet, have a sweet taste and are characterized by a higher content of sugars and a lower proportion of nicotine, which complements very well with the flavor and aroma of the rest of the material used in its conception.
+The pure Habano tastes of tobacco, since no specific flavoring is involved in its production. It can be soft, penetrating, strong or discreet, according to the proportion and type of tobacco with which it has been made; but its excellence is undoubted.
+Habanos are a big business. For instance, global sales of Cuban cigars reached 445 million dollars in 2016, which strengthened its position as a leader in the Premium cigar market.
+What makes Habanos different? To try to answer that question, PanamericanWorld approached two key figures: one of the most famous producers in Cuba and a torcedora (tobacco twister), with more than 30 years in the art of turning the leaves into a spectacular and aromatic cigar.
+For Milagros Díaz Baró there are no bad leaves, if the tobacco grower knows what he does and does it with quality. For 21 years, this experienced torcedora has her job in the Habanos store of the Hotel Nacional de Cuba, and there she carries out the process of making handmade tobacco for visitors and cigar fans</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>What do customers say when they taste the cigars that you make?</text>
+<text>\n</text>
+<text class='content'>"When they taste them, they say that this is a very good tobacco, different from the one people sell in other countries. Because in front of them a demonstration has been performed of the way it’s made, the leaves are showed to them and they can appreciate every step. Many of them end up smoking at the moment, and come back for more".</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>Why is Habano considered the best tobacco in the world?</text>
+<text>\n</text>
+<text class='content'>"The best tobacco is the one harvested in Pinar del Río. This is a tobacco area, from which the besttobacco in the world comes out due to the earth quality and the weather, since it makes the leaves develop in perfect condition, with good elasticity and flavor. From its sowing until its harvest, it’s a special tobacco."</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>How does the cigar maker influence the cigar’s final taste?</text>
+<text>\n</text>
+<text class='content'>"That is another reason why it’s considered the best tobacco in the world; it also has to do with the way it’s made, because the cigar maker must know how to work them to get the best out of the leaves. In our hands we have the touch, and that gives you a notion of the amount of leaves that a cigar can have, because not all the leaves have the same thickness. And you have to know how to choose what sheets are used for the filling, for the layers, what is used for the gift cigar, or to achieve a certain flavor. In Cuba, we have our own tradition with the tobacco production that you don’t find in any other country".
+The reason why Habano is the best tobacco in the world is also found in the land where it’s grown, and in the growers who make the harvests possible. This is the case of Héctor Luis Prieto Díaz, producer of sun and covered tobacco in the region of San Juan y Martínez, considered the main area for the Cuban cigars cultivation. For his work at the Quemado de Rubí farm, Héctor Luis obtained the Habano Man Condition, the youngest in the world to achieve that recognition.
+"We have participated in tobacco festivals in Germany, Russia, Nicaragua, the United States and the Habano Festival, the most prestigious in the world, a very important event for all lovers and connoisseurs of cigars. Then I had the opportunity to share with many people who smoke, people who are passionate about cigars, with other producers, and undoubtedly ours is the best cigar".</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>What makes the Habano so special?</text>
+<text>\n</text>
+<text class='content'>"Cuba produces the best tobacco leaf in the world, due to the soil and the microclimate that we have in the Vueltabajo region; the experience in the tobacco cultivation is also vital, the experience transmitted for years to different generations. My family was also tobacco producer, and I’ve dedicated my whole life to it".</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>What qualities of the Habano would you highlight?</text>
+<text>\n</text>
+<text class='content'>"Chemically, Cuban tobacco has a different flavor; it has organoleptic characteristics totally different from the Dominican tobacco, Nicaraguan tobacco, so we produce a tobacco that differs from what we can find in other parts of the world.
+We can ensure, not only we as producers but also other people: who are dedicated to smoking cigars,connoisseurs, those who look at details, people who are linked throughout the world to the Habanos’universe, that we have the best tobacco in the world. There's no doubt about it"</text>
 </view>
+<view class='section'>
+<view style='padding-bottom: 5px'>
+<view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
+<view class='imageAvatar'>
+<image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
+</view> 
+<view style='width: {{widht-110}}px' class='commentStyle'>
+<view class='contentComment'>
+<text class='content'>{{comment.content}}</text>
+<text class='dateText'>{{comment.createdAt}}</text>
+</view>
+</view> 
+</view>
+</view>
+</view>
+</scroll-view>
 <view class='textBar'>
-    <input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht-50}}px' focus='{{focus}}' auto-focus='true'></input>
-    <image bindtap='sendText' class='send' style='margin-left: {{widht-32}}px' src='../../images/send.png'></image>
+<input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht-50}}px' focus='{{focus}}' auto-focus='true'></input>
+<image bindtap='sendText' class='send' style='margin-left: {{widht-32}}px' src='../../images/send.png'></image>
+</view> 
 </view>
+</view>
+ 

@@ -4,8 +4,6 @@ var text = '';
 const AV = require('../../utils/av-live-query-weapp-min');
 const bind = require('../../utils/live-query-binding');
 
-const util = require('../../utils/util.js')
-
 Page({
 
   /**

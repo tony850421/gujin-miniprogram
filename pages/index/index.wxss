@@ -5,7 +5,13 @@
 }
 
 .buttonsTop{
-  margin-top: 20px;
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+}
+
+.buttonsText{
+  display: flex;
   flex-direction: row;
 }
 
@@ -25,19 +31,19 @@
 }
 
 .TextProduct1{
-  margin-left: 14%;
+  margin-left: 16%;
 }
 
 .TextProduct2{
-  margin-left: 27%;
+  margin-left: 21%;
 }
 
 .TextProduct3{
-  margin-left: 20%;
+  margin-left: 17%;
 }
 
 .TextProduct4{
-  margin-left: 36%;
+  margin-left: 29%;
 }
 
 .TextMargin{
@@ -46,7 +52,7 @@
 
 .TextMarginBottom{
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom:20px;
 }
 
 .videoHome{
@@ -69,29 +75,28 @@
 
 .tourismText{
   float: right;
-  margin-right: 12%;
+  margin-left: 12%;
 }
 
 .IconButtonComerce{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 15%;
 }
 
 .IconButtonHealth{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 17%;
 }
 
 .IconButtonTourism{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  float: right;
-  margin-right: 15%;
+  margin-left: 17%;
 }
 }
 
@@ -110,8 +115,7 @@
 }
 
 .tourismText{
-  float: right;
-  margin-right: 12%;
+  margin-left: 12%;
 }
 
 .IconButtonComerce{
@@ -132,8 +136,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  float: right;
-  margin-right: 15%;
+  margin-left: 17%;
 }
 }
 
@@ -153,7 +156,7 @@
 
 .tourismText{
   float: right;
-  margin-right: 12%;
+  margin-left: 12%;
 }
 
 .IconButtonComerce{
@@ -174,8 +177,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  float: right;
-  margin-right: 15%;
+  margin-left: 16%;
 }
 }
 
@@ -195,7 +197,7 @@
 
 .tourismText{
   float: right;
-  margin-right: 12%;
+  margin-left: 11%;
 }
 
 .IconButtonComerce{
@@ -216,8 +218,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  float: right;
-  margin-right: 15%;
+  margin-left: 15%;
 }
 }
 
@@ -237,7 +238,7 @@
 
 .tourismText{
   float: right;
-  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .IconButtonComerce{
@@ -258,8 +259,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  float: right;
-  margin-right: 12%;
+  margin-left: 16%;
 }
 }
 

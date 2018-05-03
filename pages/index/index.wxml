@@ -4,19 +4,19 @@
 </view>
 <view class="section">
   <view class="ImageHome">
-    <image class='HomePicture' src="https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg"></image>    
+    <image class='HomePicture' src="https://s19.postimg.cc/ulufuif1f/hotel.jpg"></image>    
   </view>  
 </view>
 
 <view class="section">
   <view class="buttonsTop">
-    <image bindtap='goToComerce' mode='widthFix' class='IconButtonComerce' src='../../images/comerce.png'></image>
-    <image bindtap='goToHealth' mode='widthFix' class='IconButtonHealth' src='../../images/health.png'></image>
+    <image bindtap='goToComerce' mode='aspectFit' class='IconButtonComerce' src='../../images/comerce.png'></image>
+    <image bindtap='goToHealth' mode='aspectFit' class='IconButtonHealth' src='../../images/health.png'></image>
     <image mode='widthFix' class='IconButtonTourism' src='../../images/travel.png'></image>
   </view>
 </view>
 <view class="section">
-  <view class="">
+  <view class="buttonsText">
     <text class='comerceText'>Comerce</text>
     <text class='healthText'>Health</text>
     <text class='tourismText'>Tourism</text>
@@ -24,16 +24,26 @@
 </view>
 <view class="section">
   <view class="imageMargin">
-    <image mode='widthFix' class='imageProduct' src='https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg'></image>
-    <image mode='widthFix' class='imageProduct' src='https://img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg'></image>
+    <image mode='widthFix' class='imageProduct' src='https://s19.postimg.cc/w0w0j88er/habanos.jpg'></image>
+    <image mode='widthFix' class='imageProduct' src='https://s19.postimg.cc/x3671rbsj/habana-club.jpg'></image>
   </view>
   <view class="TextMargin">
-    <text class='TextProduct1'>Mountains</text>
-    <text class='TextProduct2'>Alpes</text>
+    <text class='TextProduct1'>Habanos</text>
+    <text class='TextProduct2'>Habana Club</text>
   </view>  
 </view>
 <view class='section'>
 <view class="imageMargin">
-    <video class='videoHome' src="https://cloud.video.taobao.com/play/u/2217892767/p/1/e/6/t/1/43911461.mp4" controls ></video>
+    <video class='videoHome' src="http://lc-qNFjWh6z.cn-n1.lcfile.com/a83666d30482b79683b4.mp4" controls ></video>
   </view>
+</view>
+<view class="section">
+  <view class="imageMargin">
+    <image mode='widthFix' class='imageProduct' src='https://s19.postimg.cc/80z2bjqdv/havana.jpg'></image>
+    <image mode='widthFix' class='imageProduct' src='https://s19.postimg.cc/w4ptzu14z/woman.jpg'></image>
+  </view>
+  <view class="TextMarginBottom">
+    <text class='TextProduct3'>Havana</text>
+    <text class='TextProduct4'>Women</text>
+  </view>  
 </view>
