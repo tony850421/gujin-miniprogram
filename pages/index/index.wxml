@@ -1,7 +1,7 @@
 <!--index.wxml-->
-<view class='code'>
+<!-- <view class='code'>
   <image bindtap='scanQRCode' src='../../images/qrcode.png' class='qrImage'></image>
-</view>
+</view> -->
 <view class="section">
   <view class="ImageHome">
     <image class='HomePicture' src="http://lc-qNFjWh6z.cn-n1.lcfile.com/c8ea64d214285c5a4aee.jpg"></image>    
