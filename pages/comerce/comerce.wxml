@@ -3,7 +3,7 @@
 <view>
 <scroll-view scroll-y="true" style="height: {{height-50}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
 <view class='article'>
-<image class='HomePicture' src='https://s19.postimg.cc/w0w0j88er/habanos.jpg'></image>
+<image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
 <text class='title'>Why Habanos are the best cigars in the world?</text>
 <text>\n</text>
 <text class='content'>In Cuba, the best cigars in the world are still handmade. People call them Habanos.</text>
@@ -14,7 +14,12 @@
 <text class='content'>The layers of these cigars, unlike those produced in other regions of the planet, have a sweet taste and are characterized by a higher content of sugars and a lower proportion of nicotine, which complements very well with the flavor and aroma of the rest of the material used in its conception.
 The pure Habano tastes of tobacco, since no specific flavoring is involved in its production. It can be soft, penetrating, strong or discreet, according to the proportion and type of tobacco with which it has been made; but its excellence is undoubted.
 Habanos are a big business. For instance, global sales of Cuban cigars reached 445 million dollars in 2016, which strengthened its position as a leader in the Premium cigar market.
-What makes Habanos different? To try to answer that question, PanamericanWorld approached two key figures: one of the most famous producers in Cuba and a torcedora (tobacco twister), with more than 30 years in the art of turning the leaves into a spectacular and aromatic cigar.
+</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>What makes Habanos different?</text>
+<text>\n</text>
+<text class='content'>To try to answer that question, PanamericanWorld approached two key figures: one of the most famous producers in Cuba and a torcedora (tobacco twister), with more than 30 years in the art of turning the leaves into a spectacular and aromatic cigar.
 For Milagros Díaz Baró there are no bad leaves, if the tobacco grower knows what he does and does it with quality. For 21 years, this experienced torcedora has her job in the Habanos store of the Hotel Nacional de Cuba, and there she carries out the process of making handmade tobacco for visitors and cigar fans</text>
 <text>\n</text>
 <text>\n</text>

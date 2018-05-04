@@ -24,8 +24,8 @@ page{
 }
 
 .commentStyle{
-  background-color: #FCFCFC;
-  border: 1px #F5F5F5 solid;  
+  background-color: #E3E3E3;
+  border: 1px #E3E3E3 solid;
   border-radius: 3px;
   margin-left: 10px;
   padding: 15px;
@@ -39,8 +39,6 @@ page{
 .imageAvatar{
   width: 50px;
   height: 50px;
-  padding-top: 10px;
-  border-radius: 5px;
 }
 
 .contentComment{

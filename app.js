@@ -9,11 +9,20 @@ AV.init({
 //app.js
 App({
   onLaunch: function () {
+
+    wx.getSystemInfo({
+    success: res => {
+      console.log(res.windowWidth + " " + res.windowHeight)
+    }
+    })
+
     var query = new AV.Query("Article");
     query.count().then(function (number) {
       if(number > 0){
         query.find().then(function (results) {
           results.forEach(function (article, i, a) {
+
+            wx.setStorageSync(article.attributes.name, article.id)
 
             var queryComment = new AV.Query('Comment');
             queryComment.equalTo('owner', article);

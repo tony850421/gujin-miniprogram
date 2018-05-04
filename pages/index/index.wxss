@@ -8,11 +8,8 @@
   margin-top: 10px;
   flex-direction: row;
   display: flex;
-}
-
-.buttonsText{
-  display: flex;
-  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
 
 .buttonList{
@@ -21,29 +18,8 @@
   border: 0px;
 }
 
-.imageProduct{
-  width: 40%;
-  margin-left: 7%;
-}
-
 .imageMargin{
   margin-top: 30px;
-}
-
-.TextProduct1{
-  margin-left: 16%;
-}
-
-.TextProduct2{
-  margin-left: 21%;
-}
-
-.TextProduct3{
-  margin-left: 17%;
-}
-
-.TextProduct4{
-  margin-left: 29%;
 }
 
 .TextMargin{
@@ -59,44 +35,56 @@
   width: 100%;
 }
 
+.comerceBox{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 33.3%;
+}
+
+.imageProductBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.boxImageProduct{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.imageProduct{
+  width: inherit !important;
+  margin-bottom: 10px;
+}
+
 @media(max-width: 480px){
 .HomePicture{
   width: 100%;
   max-height: 280px;
 }
 
-.comerceText{
-  margin-left: 10%;
-}
-
-.healthText{
-  margin-left: 12%;
-}
-
-.tourismText{
-  float: right;
-  margin-left: 12%;
-}
-
 .IconButtonComerce{
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  margin-left: 15%;
+  border-radius: 50%;  
 }
 
 .IconButtonHealth{
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  margin-left: 17%;
+  border-radius: 50%;  
 }
 
 .IconButtonTourism{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 17%;
 }
 }
 
@@ -106,37 +94,22 @@
   max-height: 250px;
 }
 
-.comerceText{
-  margin-left: 10%;
-}
-
-.healthText{
-  margin-left: 11%;
-}
-
-.tourismText{
-  margin-left: 12%;
-}
-
 .IconButtonComerce{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 .IconButtonHealth{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 17%;
 }
 
 .IconButtonTourism{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 17%;
 }
 }
 
@@ -146,38 +119,22 @@
   max-height: 180px;
 }
 
-.comerceText{
-  margin-left: 11%;
-}
-
-.healthText{
-  margin-left: 10%;
-}
-
-.tourismText{
-  float: right;
-  margin-left: 12%;
-}
-
 .IconButtonComerce{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 .IconButtonHealth{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 .IconButtonTourism{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 16%;
 }
 }
 
@@ -187,38 +144,22 @@
   max-height: 180px;
 }
 
-.comerceText{
-  margin-left: 11%;
-}
-
-.healthText{
-  margin-left: 11%;
-}
-
-.tourismText{
-  float: right;
-  margin-left: 11%;
-}
-
 .IconButtonComerce{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 .IconButtonHealth{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 .IconButtonTourism{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 15%;
 }
 }
 
@@ -228,38 +169,22 @@
   max-height: 160px;
 }
 
-.comerceText{
-  margin-left: 8%;
-}
-
-.healthText{
-  margin-left: 14%;
-}
-
-.tourismText{
-  float: right;
-  margin-left: 10%;
-}
-
 .IconButtonComerce{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-left: 12%;
 }
 
 .IconButtonHealth{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-left: 16%;
 }
 
 .IconButtonTourism{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-left: 16%;
 }
 }
 
