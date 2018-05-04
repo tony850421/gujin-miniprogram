@@ -1,0 +1,51 @@
+<!--pages/havana-club/havana-club.wxml-->
+<view class='section'>
+<view>
+<scroll-view scroll-y="true" style="height: {{height}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<view class='article'>
+<image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
+<text class='title'>Havana Club: The Top 6 Rum Bars in Cuba</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Rum made in Cuba has been a forbidden product in the U.S. for over five decades, and only recently can American travelers buy and import Cuban rum into the country for personal consumption. Havana Club – Cuba’s top brand – therefore remains a novelty for many. Most bars and stores in Cuba will sell Havana Club rum of all types and prices, and most Cuban drinks – including the famous Mojito – are prepared using this brand. Here are a few bars where you’ll find the most exclusive variations – maybe even the Maximo Extra Añejo, a limited edition costing $1,000 per bottle.</text>
+<text>\n</text>
+<text>\n</text>
+<view class='subtitle'>Havana Club Rum Museum</view>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>A good way to get familiar with Cuba’s rum culture is to visit the Havana Club Rum Museum. Guided tours around a typical distillery museum will take you through the production process, from the very beginning at sugar plantations to production, and consumption (the tour ends at the bar, with rum shots). Tours take some 30 minutes and cost around US$5.</text>
+<text>\n</text>
+<text>\n</text>
+<view class='subtitle'>Sloppy Joe’s</view>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>One of the most popular bars in Havana in the 1930s and 1940s, Sloppy Joe’s was completely rebuilt and reopened a few years ago, following a long period of abandonment that started after the 1959 revolution. Located next to the Hotel Parque Central in one of the busiest and fastest growing centers in Old Havana, the bar is extremely popular among tourists, and one of the main stops of Havana’s tours.</text>
+<text>\n</text>
+<text>\n</text>
+<view class='subtitle'>La Torre (F.O.C.S.A.)</view>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>This is a bar-restaurant located on the top floor of Havana’s tallest building, the F.O.C.S.A. building, with large windows that offer a fantastic aerial view of the newest part of the city in every direction. There are probably better bars offering better drinks and food – this is a state-run establishment, and usually privately-owned bars are the ones that will come closer to international standards of service – but at no other will you enjoy these awesome views of Havana.</text>
+<text>\n</text>
+<text>\n</text>
+<view class='subtitle'>Cuban Art Factory</view>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>One of the hottest night spots in Havana, Fabrica de Arte Cubano (F.A.C.) is a cultural center where customers can enjoy all kinds of shows, from fashion shows to live music performances to art shows, while having a drink. Located in the limit between Vedado and Miramar, the place has become so popular that it is permanently packed, and it’s become harder and harder to find Cubans there, as tourists keep flooding the place. At certain periods, F.A.C. will close until the next cycle of performances is organized, so always call before showing up.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>La Flauta Magica</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>La Flauta Magica (The Magic Flute) is a bar on the top floor of a 10-story building opposite the U.S. Embassy and the Malecon in Vedado. The terrace, which accommodates an inviting swimming pool, offers gorgeous views of the city and the perfect atmosphere to relax after a hot, tropical Cuban day. Live music – including nights especially devoted to jazz performances – make the experience even more enjoyable. In addition to the customary Cuban drinks, the bar takes pride in owning the entire Havana Club portfolio.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>El Floridita</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>One of American author Ernest Hemingway’s favorite spots in Havana, the Floridita bar-restaurant is one of Havana’s most famous bars. Located in the heart of the old quarter, this is a great place for taking pictures next to a real-size bronze statue of the writer. The statue was installed a few years ago in the same spot where he used to sit in the 1950s, and a freshly-made daiquiri is placed in front of the immortalized writer every day. This is also the place to try a “Papa Doble,” a special daiquiri prepared the way Hemingway liked it. A variation that uses the same ingredients as in the original recipe, but adds more rum and no sugar, this mix includes two-and-a-half shots of white rum, lemon juice, half a grapefruit and six drops of maraschino.</text>
+<text>\n</text>
+</view>
+</scroll-view>
+</view>
+</view>

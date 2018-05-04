@@ -1,4 +1,4 @@
-// pages/health/health.js
+// pages/tourism/tourism.js
 var text = '';
 
 const AV = require('../../utils/av-live-query-weapp-min');
@@ -45,7 +45,7 @@ Page({
    */
   onReady: function () {
     wx.getStorage({
-      key: 'Health',
+      key: 'Tourism',
       success: res => {
         this.fetchComments(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
       },
@@ -102,7 +102,7 @@ Page({
    */
   onPullDownRefresh: function () {
     wx.getStorage({
-      key: 'Health',
+      key: 'Tourism',
       success: res => {
         this.fetchComments(res.data).catch(error => console.error(error.message)).then(wx.stopPullDownRefresh);
       },
@@ -129,7 +129,7 @@ Page({
   },
   confirmText: function () {
     wx.getStorage({
-      key: 'Health',
+      key: 'Tourism',
       success: res => {
         var article = AV.Object.createWithoutData('Article', res.data)
 

@@ -5,7 +5,11 @@
     "pages/user/user",
     "pages/maps/maps",
     "pages/comerce/comerce",
-    "pages/health/health"
+    "pages/health/health",
+    "pages/tourism/tourism",
+    "pages/women/women",
+    "pages/havana/havana",
+    "pages/havana-club/havana-club"
   ],
   "window": {
     "backgroundTextStyle": "light",

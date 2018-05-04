@@ -1,0 +1,72 @@
+<!--pages/women/women.wxml-->
+<view class='section'>
+<view>
+<scroll-view scroll-y="true" style="height: {{height}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<view class='article'>
+<image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
+<text class='title'>What’s With Cuban Women?</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The post-war boom, as well as the modernization of transportation and communications, has led to rapid growth of the tourist sector, particularly in countries in the process of development.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>On Sunday, a 28-year-old novelist, whom I’ll call Raffi, joins us for the day’s sightseeing. Wearing a straw hat with a black band, khaki pants and sunglasses tucked in the V of his yellow polo shirt, Raffi has an open face and dark eyes, quick to smile. He’s a friend of one of our leaders, Trish, who’s guided many trips to Cuba.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi, two others and I climb into a taxi — a ‘55 Chevy that’s been painted “Havana blue” and completely refurbished, with air conditioning, a rebuilt motor, new upholstery and paint and stereo sound coming out of the ancient radio. The drivers use ingenuity and parts they scrounge on the black market to keep the cars in peak condition. Raffi tells me the driver makes more than surgeons, who earn about $25 a month. “I have friends with Ph.D.s who drive taxis,” he says, explaining that there are two currencies in Cuba — CUCs (called kooks), for tourists, and CUPs, or pesos, for Cubans. The CUC is worth about a dollar but the peso is worth four cents. Taxi drivers and others who work with tourists get paid in CUCs, but all other Cubans get the measly pesos, and they can’t live on pesos alone. Some earn cash from illegal activities and others get money sent from relatives abroad.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi says his grandfather was a founder of the Cuban Communist party, but his grandmother hates the revolution. “She had a business that they nationalized and took away,” he says. “She thinks the revolution ruined the country.” His grandfather, who owned a small coffee shop, was so passionate for the revolution that when officials came to his shop, he said, “Take it!” Raffi smiles. “They were like cat and dog. That’s why they were so in love.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>We pass a billboard, “United for a sustainable socialism.” I ask Raffi why I haven’t seen or heard the word “communism.” He shrugs. “Today we don’t speak of communism. We want a socialism where the government controls the most essential parts of the economy but not all. A socialism that can survive without being subsidized by Russia or China.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>“Do you think that’s possible?” I ask.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>“We don’t know. We hope.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi is working on a novel about Jose Marti, which, he says, “has helped me a lot. When you learn about the man, you fall in love with the country he lived and died for.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>“What do you think Marti would make of Cuba today?”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi throws back his head and laughs. “That’s a question I ask myself every day.” He says Marti would have wanted the revolution and the good things it brought — free education and healthcare for everyone. “But...” He raises his hands, palms up.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>I tell him I’ve read “Havana Real,” by the dissident blogger, Yoani Sanchez, who describes how she grew up hungry and obsessed with food, had to wait years to get a pair of eye glasses and had her blog repeatedly shut down by “faceless censors.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi nods. “What’s revolutionary at one time can become orthodox tomorrow.” He believes this is what happened with the Cuban revolution — the idealistic cause became frozen into a defensive and rigid bureaucracy. “We have to revolutionize the revolution,” Raffi says.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>I suggest that the same could apply to the American revolution. What the founders conceived of as a system of checks and balances has devolved into obstruction and paralysis. “We need to revolutionize it.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi and I learn we share a love of “Cuban fusion music,” made by young musicians who merge traditional Cuban melodies with other genres — rock ‘n roll, reggae, African and Brazilian. He tries to find a fusion concert that night, but not hearing of one, takes me to a large club, the Casa de Musica Habana. There are two show times in Cuba: the matinee, from 5 to 9 p.m., and the night show, from 11 p.m. to 3 a.m. We arrive during the interval when the place is closed, so we wait on a nearby park bench. Raffi lives in this neighborhood, with his grandmother, a cousin, her husband and their baby.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>This is central Havana — drab, crowded and ugly — where a building collapses every three days. The buses are so full that people have to fight their way inside, so they often walk the distance or splurge on a bicycle taxi.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Raffi spots a cluster of 10-year-old girls who live on his block, sitting on a bench across from us, singing in harmony. Raffi waves and calls, “How come you don’t say hello?” The girls jump to their feet and run over, forming a line in front of Raffi. As if moving down a reception line, each girl takes Raffi’s hand and touches her left cheek to his, then her right cheek to his, then takes my hand and does the same. It’s the sweet Cuban greeting — touching both cheeks — that I’ll come to savor.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>After the girls run back to their bench, Raffi tells me he’s different from most of his peers, because his mother was a diplomat who took him with her to other countries. “I’ve seen the world, but others my age want to see what’s outside Cuba.” Most of his friends, including his girlfriend, say, “There’s no future for us in Cuba.” They study at university, complete graduate work, but then find there are no openings for the jobs they’ve been trained to do.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>None of his friends are married, and if they were, they wouldn’t be able to find housing and would have to crowd in with relatives. Most of them want to leave, but not Raffi. “I’m happy in Cuba,” he says. “The country is changing, but people don’t believe it yet. They self censor, holding back their real thoughts out of fear.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>When the club opens, they charge me 10 CUC’s and him 3 pesos to go inside, where the music is reggaeton, not my favorite or his, and it’s loud. Eardrum-busting loud. I watch young women grind and shake, rubbing their boobs in men’s faces or grabbing hold of a guy’s buttocks and slamming their crotch into it.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>We leave after twenty minutes and I’m disoriented. In the early days of Women’s Liberation, I was part of the cohort who stopped shaving our legs and were annoyed when guys whistled at us on the street. We insisted on being seen not as sex objects but as full and fully valued human beings. What’s with the Cuban women?</text>
+<text>\n</text>
+</view>
+</scroll-view>
+</view>
+</view>

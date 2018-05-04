@@ -1,7 +1,7 @@
 <!--pages/comerce/comerce.wxml-->
 <view class='section'>
 <view>
-<scroll-view scroll-y="true" style="height: {{height-50}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<scroll-view scroll-y="true" style="height: {{height-45}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
 <view class='article'>
 <image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
 <text class='title'>Why Habanos are the best cigars in the world?</text>

@@ -1,1 +1,74 @@
 <!--pages/health/health.wxml-->
+<view class='section'>
+<view>
+<scroll-view scroll-y="true" style="height: {{height-45}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<view class='article'>
+<image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
+<text class='title'>Cuba’s Health Care System: a Model for the World</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The Cuban health system is recognized worldwide for its excellence and its efficiency. Despite extremely limited resources and the dramatic impact caused by the economic sanctions imposed by the United States for more than half a century, Cuba has managed to guarantee access to care for all segments of the population and obtain results similar to those of the most developed nations.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>During her recent visit to Havana in July of 2014, Margaret Chan, Director-General of the World Health Organization (WHO), impressed by the country’s achievements in this field, praised the Cuban health care system: “Cuba is the only country that has a health care system closely linked to research and development. This is the way to go, because human health can only improve through innovation,” She also praised “the efforts of the country’s leadership for having made health an essential pillar of development”.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Cuba’s health care system is based on preventive medicine and the results achieved are outstanding. According to Margaret Chan, the world should follow the example of the island in this arena and replace the curative model, inefficient and more expensive, with a prevention-based system. “We sincerely hope that all of the world’s inhabitants will have access to quality medical services, as they do in Cuba,” she said.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>WHO notes that the lack of access to care in the world is by no means a foregone conclusion arising from a lack of resources. It reflects, instead, a lack of political will on the part of leaders to protect their most vulnerable populations. The organization cites the case of the Caribbean island as the perfect counter-example. Moreover, in May 2014, in recognition of the excellence of its health care system, Cuba chaired the 67th World Health Assembly.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>With an infant mortality rate of 4.2 per thousand births, the Caribbean island is the best performer on the continent and in the Third World generally. This is also demonstrated by the quality of its health care system and the impact it has on the well-being of children and pregnant women. The infant mortality rate in Cuba is lower than it is in the United States and is among the lowest in the world.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>With a life expectancy of 78 years, Cuba is one of the best performers on the American continent and in the Third World, achieving results similar to those of most developed nations. On the average, Cubans live 30 years longer than their Haitian neighbors. In 2025, Cuba will have the highest proportion of its population over the age of 60 in all of Latin America.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>A health system that serves the people of the Third World</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Cuban expertise in the field of health also benefits the people of the Third World. Indeed, since 1963, Cuba has sent doctors and other health workers throughout the Third World to treat the poor. Currently, nearly 30,000 Cuban medical staff are working in over 60 countries around the world.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The iconic example of this solidarity with the poorest of the earth is Operation Miracle, a major vision restoration program launched in 2004 by Fidel Castro and Hugo Chávez. This humanitarian campaign, implemented at the continental level under the aegis of the Bolivarian Alliance for the Peoples of Our America (ALBA), operates without charge on the Latin American poor who suffer from cataracts and other eye diseases.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>In a decade, nearly 3.5 million people have had their vision restored through this example of Cuban internationalism. Initially created for Venezuela, this social program was extended to the entire continent with the objective of operating on a total of six million people. In addition to surgery, Mission Miracle, a strategy for improving the program’s reach and performance, provides free eyeglasses and contact lenses for people with vision impairment.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>In total, nearly 165 Cuban institutions participate in Operation Miracle, which maintains a network of 49 ophthalmological centers and 82 surgical units in 14 countries in Latin America: Bolivia, Costa Rica, Ecuador, Guatemala, Guyana, Haiti, Honduras, Grenada, Nicaragua, Panama, Paraguay, Saint Vincent and the Grenadines, Venezuela and Uruguay.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Cuban medical solidarity also extends to Africa. In 2014, LABIOFAM, the Cuban chemical and biopharmaceutical research institute, launched a vaccination campaign against malaria in no fewer than 15 West African countries. According to WHO, the virus, which affects mostly children, costs the lives of some 630,000 people a year, “most of them children under five living in Africa.” The organization emphasizes that “This means that 1,000 young children die every day from malaria.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Similarly, Cuba trains young physicians worldwide in its Latin American School of Medicine (ELAM). Since its inception in 1998, ELAM has graduated more than 20,000 doctors from over 123 countries. Currently, 11,000 young people from over 120 nations follow a career in medicine at the Cuban institution. According to Ban Ki-moon, Secretary General of the UN, ELAM is “the world’s most advanced medical school.” He also praised the Cuban doctors working around the world, including those in Haiti: “They are always the first to arrive and the last to leave. They remain in place after the crises. Cuba can be proud of its health care system, a model for many countries.”</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>In praising Cuba, the World Health Organization stresses that it is possible for Third-world countries with limited resources to implement an efficient health care system and provide all segments of the population with social protection worthy of the name. This is possible if the political will exists to put human beings at the center of the project.</text>
+<text>\n</text>
+</view>
+<view class='section'>
+<view style='padding-bottom: 5px'>
+<view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
+<view class='imageAvatar'>
+<image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
+</view> 
+<view style='width: {{widht-110}}px' class='commentStyle'>
+<view class='contentComment'>
+<text class='content'>{{comment.content}}</text>
+<text class='dateText'>{{comment.createdAt}}</text>
+</view>
+</view> 
+</view>
+</view>
+</view>
+</scroll-view>
+<view class='textBar'>
+<input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht-50}}px' focus='{{focus}}' auto-focus='true'></input>
+<image bindtap='sendText' class='send' style='margin-left: {{widht-32}}px' src='../../images/send.png'></image>
+</view> 
+</view>
+</view>
+ 

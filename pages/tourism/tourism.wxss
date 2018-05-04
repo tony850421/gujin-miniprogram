@@ -1,4 +1,4 @@
-/* pages/health/health.wxss */
+/* pages/tourism/tourism.wxss */
 .textArray{
   width: 100%;
   position: static;

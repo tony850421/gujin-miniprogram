@@ -59,7 +59,11 @@ Page({
   scanQRCode: function(){
     wx.scanCode({
       success: (res) => {
-        console.log(res)
+        wx.showToast({
+          title: res.result,
+          icon: 'success',
+          duration: 2000
+        })
       }
     })
   },
@@ -74,6 +78,38 @@ Page({
   goToHealth: function () {
     wx.navigateTo({
       url: '../health/health',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  goToTourism: function () {
+    wx.navigateTo({
+      url: '../tourism/tourism',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  goToWomen: function () {
+    wx.navigateTo({
+      url: '../women/women',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  goToHavana: function () {
+    wx.navigateTo({
+      url: '../havana/havana',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  goToHavanaClub: function () {
+    wx.navigateTo({
+      url: '../havana/havana',
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },

@@ -73,6 +73,8 @@ page{
 .content{
   font-size: 15px;
   margin-bottom: 20px;
+  text-align: justify;
+  text-justify: auto;
 }
 
 .article{

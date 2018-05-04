@@ -9,13 +9,6 @@ AV.init({
 //app.js
 App({
   onLaunch: function () {
-
-    wx.getSystemInfo({
-    success: res => {
-      console.log(res.windowWidth + " " + res.windowHeight)
-    }
-    })
-
     var query = new AV.Query("Article");
     query.count().then(function (number) {
       if(number > 0){

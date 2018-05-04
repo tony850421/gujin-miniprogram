@@ -1,0 +1,75 @@
+<!--pages/tourism/tourism.wxml-->
+<view class='section'>
+<view>
+<scroll-view scroll-y="true" style="height: {{height-45}}px" bindscrolltoupper="upper"bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" scroll-top="100">
+<view class='article'>
+<image class='HomePicture' src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
+<text class='title'>Tourism Development for the Cuban Economy</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The post-war boom, as well as the modernization of transportation and communications, has led to rapid growth of the tourist sector, particularly in countries in the process of development.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Because of the general tourism boom, not to mention the critical situation spawned by the collapse of socialism in Eastern Europe, Cuba began in the 1990s to adopt tourism as one of the basic pillars in the redefinition of its economic strategy. As a sunny Caribbean island, Cuba had flourished as a tourist destination, although it was accompanied by serious social distortions such as gambling, prostitution, and other vices. Following the Cuban revolution in 1959, however, tourism practically disappeared from the island. Part of the reason, of course, was that the United States market dried up as a result of the U.S. embargo. But more significantly, Cuba's strategy for economic and social development didn't consider tourist activity as key to the future of the island.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Tourism eventually became more important because it represented a significant group of investments that could generate hard currency. The 1997 Cuban Economic Resolution spells out the necessity to develop hard currency-earning sectors of the economy to finance other important activities, making explicit the role tourism could play in the country's economic future. To achieve this, it set a goal: to attract more than two million tourists to the country by the year 2000 and earn more than $2,600 million from the tourist trade.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Thus, tourism, in ten years of sustained development, has been converted into the most dynamic sector of the Cuban economy. One-fourth of the investments in Cuba have been made in tourism. It has contributed an impressive 43% to the balance of payments at the end of the decade, more than any other industry. In a mere decade, tourism has gone from being an incidental source of income to becoming a structural factor in the Cuban economy. Few times in international history has such a dynamic structural transformation occurred. Ten years ago, the sugar industry provided between 70 and 75% of the income of the balance of payments, while the tourist sector accounted for only 6%. Cuban Tourism Minister Ibrahim Ferradaz observed that "in the last ten years, the sector multiplied its gross income eight-fold; the number of visitors multiplied by five, the number of rooms in tourist establishments tripled, and the number of jobs in the tourist sector doubled."</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>This achievement can be attributed to the design and implementation of a strategy for sector development, aiming to consolidate the "structural competitivity" of tourism through the use of Cuba's existing social and cultural assets, as well as the creation of long-term sustainable competitive advantages.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>It is said that when Christopher Columbus arrived at the northeast coast of Cuba on October 27, 1492, startled by the island's beauty, he exclaimed, "This is the most beautiful land human eyes have ever seen!" And he became de facto the first tour operator on the island. Undoubtedly, Cuba is an obvious site for tourism, with its picturesque beaches, underwater beauty, countryside landscapes, and ecological reserves (many yet to be explored). Its climate complements its easy air and sea access, as well as its important historical and cultural patrimony. An educated population and improved infrastructure of roads and communications add to the mix.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The Cuban government's economic policy and support mechanisms have complemented these advantages. In the Caribbean region, Cuba is now the second most popular tourist destination.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='subtitle'>Pillars of Tourism Development Strategy</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>In the context of an economic crisis, decisive Cuban government policy "bet on" tourism. Between 1990 and 1999, more than $3.5 billion were invested in the tourist industry. The number of rooms available to international tourists grew from 12,000 to 35,000. Significant resources were also devoted to infrastructure such as airports, causeways connecting the keys, and other tourist facilities. The shift from an emphasis on goods and productivity to that of services has made tourism the "locomotive" of the Cuban economy.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Tourism is not only important in and of itself. It serves to stimulate other sectors of the economy. The real challenge is how tourism can contribute to the development and consolidation of sectors of the domestic economy that aren't truly competitive without losing "structural competitivity". However, the utilization of tourist demand has been sustained in a basic principle: to not force any tourist entity to buy national products, especially if those products are not considered internationally competitive. In this sense, the government does not provide support to national products in the context of the tourist industry.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Sectors related to the tourism sector operate in an environment of competition. In 1990, only 18% of the sector's purchases were domestic; by the end of 2000, the amount increased to 61%. As a result of the incorporation of several sectors of the economy into the tourist "locomotive," 198,000 jobs were created or recovered.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The insufficiency of financial resources, the lack of channels of access to markets, as well as the lack of experience in tourist operations, also led to the necessity of developing a group of alliances of various types with foreign entities. In slightly more than ten years, 26 mixed enterprises have been created in the tourism sector. Moreover, by the end of the year 2000, half of the country's hotel capacity was administered by 17 international hotel chains.</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>Foreign companies have become increasingly interested in investing in the Cuban tourism sector, especially after the creation of a Ministry of Tourism in 1994, coupled with the approval of a 1995 law that spelled out the rules for foreign investments. Francisco Camps, an executive with the Sol MelÃ­a hotel chain, considered the largest operational foreign partner with 20 hotels on the island, declared recently in a published interview that Cuba "has a lot of future in this field, and we enjoy these types of challenges."</text>
+<text>\n</text>
+<text>\n</text>
+<text class='content'>The policy of education and development of human resources is another pillar of the strategy of tourism development in Cuba. Cuba's work force is well-educated, thus creating conditions to carry out efficient work in any field. The Cuban tourist system already has several educational centers to develop workers for this sector. In 1994, all these centers were consolidated into a network known as FORMATUR, today made up of 22 teaching centers throughout the country, from which 16,000 workers graduate annually in diverse fields of concentration.</text>
+<text>\n</text>
+</view>
+<view class='section'>
+<view style='padding-bottom: 5px'>
+<view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
+<view class='imageAvatar'>
+<image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
+</view> 
+<view style='width: {{widht-110}}px' class='commentStyle'>
+<view class='contentComment'>
+<text class='content'>{{comment.content}}</text>
+<text class='dateText'>{{comment.createdAt}}</text>
+</view>
+</view> 
+</view>
+</view>
+</view>
+</scroll-view>
+<view class='textBar'>
+<input bindinput='bindKeyInput' bindconfirm='confirmText' value='{{inputText}}' class='inputSend' type='text' style='width: {{widht-50}}px' focus='{{focus}}' auto-focus='true'></input>
+<image bindtap='sendText' class='send' style='margin-left: {{widht-32}}px' src='../../images/send.png'></image>
+</view> 
+</view>
+</view>
+ 
+

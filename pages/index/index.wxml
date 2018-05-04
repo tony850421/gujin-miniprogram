@@ -10,15 +10,15 @@
 
 <view class="section">
   <view class="buttonsTop">
-    <view class='comerceBox'>
-      <image bindtap='goToComerce' mode='aspectFit' class='IconButtonComerce' src='../../images/comerce.png'></image>
+    <view class='comerceBox' bindtap='goToComerce'>
+      <image mode='aspectFit' class='IconButtonComerce' src='../../images/comerce.png'></image>
       <text>Comerce</text>
     </view>
-    <view class='comerceBox'>
-      <image bindtap='goToHealth' mode='aspectFit' class='IconButtonHealth' src='../../images/health.png'></image>
+    <view class='comerceBox' bindtap='goToHealth'>
+      <image mode='aspectFit' class='IconButtonHealth' src='../../images/health.png'></image>
       <text>Health</text>
     </view>
-    <view class='comerceBox'>
+    <view class='comerceBox' bindtap='goToTourism'>
       <image mode='widthFix' class='IconButtonTourism' src='../../images/travel.png'></image>
       <text>Tourism</text>
     </view>
@@ -26,11 +26,11 @@
 </view>
 <view class="section">
   <view class='boxImageProduct'>
-    <view class='imageProductBox'>
+    <view class='imageProductBox' bindtap='goToComerce'>
       <image mode='widthFix' class="imageProduct" src='http://lc-qNFjWh6z.cn-n1.lcfile.com/11ea5bbca5cb7d7c97be.jpg'></image>
       <text>Habanos</text>
     </view>
-    <view  class='imageProductBox'>
+    <view  class='imageProductBox' bindtap='goToHavanaClub'>
       <image mode='widthFix' class="imageProduct" src='http://lc-qNFjWh6z.cn-n1.lcfile.com/80d89c9ee8bda9436ea0.jpg'></image>
       <text>Habana Club</text>
     </view>
@@ -42,12 +42,12 @@
   </view>
 </view>
 <view class="section">
-  <view class='boxImageProduct'>
+  <view class='boxImageProduct' bindtap='goToHavana'>
     <view class='imageProductBox'>
       <image mode='widthFix' class="imageProduct" src='http://lc-qNFjWh6z.cn-n1.lcfile.com/3aca4f015b846c455e64.jpg'></image>
       <text>Havana</text>
     </view>
-    <view  class='imageProductBox'>
+    <view  class='imageProductBox' bindtap='goToWomen'>
       <image mode='widthFix' class="imageProduct" src='http://lc-qNFjWh6z.cn-n1.lcfile.com/faeb3c8035c358499fcf.jpg'></image>
       <text>Women</text>
     </view>
