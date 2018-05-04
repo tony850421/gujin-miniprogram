@@ -55,8 +55,9 @@ We can ensure, not only we as producers but also other people: who are dedicated
 <view class='comments' wx:for="{{commentsArray}}" wx:for-item="comment" wx:key="unique">
 <view class='imageAvatar'>
 <image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
-</view> 
+</view>
 <view style='width: {{widht-110}}px' class='commentStyle'>
+<image class='pike' src='../../images/pike.png'></image>
 <view class='contentComment'>
 <text class='content'>{{comment.content}}</text>
 <text class='dateText'>{{comment.createdAt}}</text>

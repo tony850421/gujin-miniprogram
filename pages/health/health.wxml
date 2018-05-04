@@ -56,6 +56,7 @@
 <image src='{{comment.avatarUrl}}' class='imageAvatar'></image>
 </view> 
 <view style='width: {{widht-110}}px' class='commentStyle'>
+<image class='pike' src='../../images/pike.png'></image>
 <view class='contentComment'>
 <text class='content'>{{comment.content}}</text>
 <text class='dateText'>{{comment.createdAt}}</text>
